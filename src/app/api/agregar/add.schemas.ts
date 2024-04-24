@@ -26,6 +26,6 @@ export const formSchema = z.object({
     description: z.string({
       invalid_type_error: "Debe ser una cadena",
       required_error: "Debes proveer una cadena",
-    }),
+    }).optional(),
   });
   export type Form = z.infer<typeof formSchema>;
