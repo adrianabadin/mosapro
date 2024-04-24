@@ -2,8 +2,8 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
 import {z} from "zod"
 import { Form } from "@/app/components/Formulario";
 import { logger } from "@/services/logger";
-
-
+import dotenv from "dotenv"
+dotenv.config()
 const dotenvSchema = z.object({
 
 DATABASE_URL:z.string(),
