@@ -48,28 +48,28 @@ export const apiSlice=createApi({
     endpoints:(builder)=>({
         uploadPhoto:builder.mutation<{driveId:string},FormData>({
             query:(body)=>({
-            url:`/subir`,
+            url:`/api/subir`,
             method: 'POST',      
             body,     
         })
     }),
     addForm:builder.mutation<{id:string},Form>({
         query:(body)=>({
-            url:'/agregar',
+            url:'/api/agregar',
             method: 'POST',
             body
         })
     }),
     login:builder.mutation<LoginResponse,Login>({
         query:(body)=>({
-            url:"/ingresar",
+            url:"/api/ingresar",
             method:"POST",
             body,
         })
     }),
     jwt:builder.query<any,undefined>({
         query:(undefined)=>({
-            url:"/jwt",
+            url:"/api/jwt",
             method:"GET"
         })
     })
