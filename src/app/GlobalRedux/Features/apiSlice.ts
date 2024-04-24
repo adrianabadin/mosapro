@@ -42,7 +42,7 @@ export const loginSchema= z.object({
 export type Login=z.infer<typeof loginSchema>
 export type LoginResponse = Login & {isAdmin:boolean}
 const dd=process.env.ORIGIN.trim()+"api"
-logger.error(dd)
+console.log(dd)
 export const apiSlice=createApi({
     reducerPath: "api",
     baseQuery:fetchBaseQuery({baseUrl:process.env.ORIGIN.trim()+"api",credentials:"include",mode:"same-origin"}),
