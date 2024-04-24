@@ -51,7 +51,7 @@ function Login() {
           login(data)
             .unwrap()
             .then(() => console.log("Success"))
-            .catch((e) => {
+            .catch((e: any) => {
               swal.fire("Error al ingresar", e.text, "error");
             });
         })}

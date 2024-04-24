@@ -1,6 +1,5 @@
-import {FetchArgs, createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
 import {z} from "zod"
-import { AuthResponseType } from "./authSlice"
 import { Form } from "@/app/components/Formulario";
 
 

@@ -64,11 +64,11 @@ function Formulario() {
   const onSubmit = handleSubmit((data) => {
     console.log(data);
     addForm(data)
-      .then((res) => {
+      .then((res: any) => {
         console.log("success: ", res);
         reset();
       })
-      .catch((err) => {
+      .catch((err: any) => {
         swal.fire("Error", err.text, "error");
       });
   });
@@ -183,7 +183,7 @@ function Formulario() {
                         body.append("photo", e.target.files[0]);
                       uploadPhoto(body)
                         .unwrap()
-                        .then((res) => {
+                        .then((res: any) => {
                           const { driveId } = res;
                           setValue("driveId", driveId);
                           console.log(driveId);
@@ -222,7 +222,7 @@ function Formulario() {
                       body.append("photo", e.target.files[0]);
                     uploadPhoto(body)
                       .unwrap()
-                      .then((res) => {
+                      .then((res: any) => {
                         const { driveId } = res;
                         setValue("driveId", driveId);
                         console.log(driveId);
