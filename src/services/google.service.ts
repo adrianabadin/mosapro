@@ -18,8 +18,17 @@ export class GoogleService {
     }
     async initiateService(){
         //const datab= await fs.promises.readFile("./rsx.json", "utf8");
+        const buff= JSON.parse(Buffer.from(process.env.data,"base64").toString("utf8"));	
+        console.log(buff)
         const authClient= new google.auth.GoogleAuth({
-            keyFilename:"./rsx.json",
+            credentials:{
+                client_email:buff.client_email,
+                private_key:buff.private_key,
+                
+                
+                
+            },
+            // keyFilename:"./rsx.json",
             scopes:
                 [             
                 "https://www.googleapis.com/auth/documents",'https://www.googleapis.com/auth/drive','https://www.googleapis.com/auth/drive.file','https://www.googleapis.com/auth/presentations']})

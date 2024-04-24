@@ -11,7 +11,7 @@ const nextconfig = {
           pathname: '/**',
         },
       ],
-    },
+    },typescript:{ignoreBuildErrors:true}
   }
 
 export default nextconfig

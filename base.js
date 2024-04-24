@@ -1,0 +1,8 @@
+const fs= require("fs")
+const dotenv = require ("dotenv")
+dotenv.config()
+//const data= fs.readFileSync("rsx.json","utf8")
+//console.log (data)
+console.log(process.env.data)
+const buff= Buffer.from(process.env.data,"base64").toString("utf-8")
+console.log(buff,"texfdo")
