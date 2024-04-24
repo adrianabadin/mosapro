@@ -28,9 +28,12 @@ yarn-error.log*
 # local env files
 .env*.local
 rsx.json
+region.json
+error.log
+debug.log
 # vercel
 .vercel
-
+.env
 # typescript
 *.tsbuildinfo
 next-env.d.ts
