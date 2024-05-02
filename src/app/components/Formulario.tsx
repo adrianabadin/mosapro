@@ -82,14 +82,14 @@ function Formulario() {
           Objetivo
         </Typography>
         <Typography className="text-xl text-blue-gray-500 text-justify ">
-          A traves de este formulario pretendemos generar un reconto de los
-          compañeros de salud que dejaron su vida durante la pandemia. El
+          A traves de este formulario pretendemos generar un reconto de las y
+          los compañeros de salud que dejaron su vida durante la pandemia. El
           objetivo final es realizar un reconocimiento a su legado al momento de
-          finalizar el congreso provincial. Estamos convencidos que el
-          sacrificio desinteresado, la solidaridad y la entrega de estos
-          trabajadores debe destacarse como un valor fundamental de la sociedad
+          finalizar el Congreso Provincial de Salud. Estamos convencidos que el
+          sacrificio desinteresado, la solidaridad y la entrega de estas y estos
+          trabajadores deben destacarse como un valor fundamental de la sociedad
           que queremos construir. De esta manera recordarlos trae al presente la
-          virtud de estos individuos que han fortalecido las filas de nuestro
+          virtud de estas personas que han fortalecido las filas de nuestro
           colectivo sanitario.
         </Typography>
       </CardBody>
@@ -159,7 +159,7 @@ function Formulario() {
           />
 
           {getValues("driveId") === undefined ? (
-            <div className="relative flex justify-center items-center mt-2 md:mt-0 flex-col object-contain">
+            <div className="relative flex justify-center opacity-0 items-center mt-2 md:mt-0 flex-col object-contain">
               <Typography
                 variant="h4"
                 color="blue-gray"
@@ -170,7 +170,7 @@ function Formulario() {
               {isLoading ? (
                 <Spinner fontSize={60} />
               ) : (
-                <div className="w-fit h-fit pt-2 relative">
+                <div className="w-fit h-fit pt-2 relative opacity-0">
                   <Image src={upload} alt="Subir Foto" width={48} height={48} />
                   <input
                     className="absolute w-full h-full top-0 left-0 cursor-pointer z-10 opacity-0 bg-transparent"
