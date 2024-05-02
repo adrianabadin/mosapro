@@ -119,7 +119,7 @@ async createSlides(data:Prisma.FormularioCreateInput){
             {   const newRequest =[
                 {replaceImage:
                     (images !==undefined &&data.driveId !== undefined) 
-                    ? {imageObjectId:images[1],url:`https://drive.google.com/uc?id=${data.driveId}`}
+                    ? {imageObjectId:images[1],url:`https://drive.google.com/uc?id=${'10qxqBupwpNXEIahaWNZ14eoL3h8JuihT'}`}
                     :undefined},
                 {
                     replaceAllText:{
